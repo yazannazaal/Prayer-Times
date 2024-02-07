@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #4d1702;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    margin-top: 50px;
+    background: #a97d47;
+    border-radius: 50%;
+    padding: 10px;
+    outline: 10px solid #a97d47;
+    outline-offset: 10px;
+    box-shadow: 0 0 50px #151521;
+}
+.clock{
+    position: relative;
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #4d1702;
+}
+.clock span{
+    position: absolute;
+    transform: rotate(calc(30deg * var(--x)));
+    inset: 7px;
+    text-align: center;
+}
+
+
+.clock span b{
+    transform: rotate(calc(-30deg * var(--x)));
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 500;
+    height: 40px;
+    width: 40px;
+    color: #4d1702;
+}
+
+.clock::before{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #151521;
+    z-index: 0;
+}
+.stick{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.stick i{
+    position: absolute;
+    background: var(--colr);
+    height: var(--heith);
+    width: var(--wdth);
+    z-index: 0;
+}
+#hours i {
+    --heith: 60px; /* Set the height for hours */
+}
+
+#minutes i {
+    --heith: 100px; /* Set the height for minutes */
+}
+
+#seconds i {
+    --heith: 130px; /* Set the height for seconds */
+}

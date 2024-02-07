@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .contact{
+            height: 100vh;
+            background: wheat;
+            padding: 50px;
+            text-align: center;
+        }
+        .container{
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .container h2{
+            font-size: 40px;
+            margin-bottom: 50px;
+        }
+        .content{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 30px;
+        }
+        .form{
+            text-align: left;
+        }
+        .inputs{
+            margin-bottom: 20px;
+        }
+        .inputs input,textarea{
+            width: 100%;
+            padding: 10px;
+            border-radius: 12px;
+            border: none;
+        }
+        .form button{
+            display: inline-block;
+            padding: 10px 20px;
+            background: green;
+            cursor: pointer;
+            transition: 0.5 ease;
+        }
+        .form button:hover{
+            background: greenyellow;
+        }
+        .info{
+            text-align: left;
+        }
+        .info h3{
+            font-size: 30px;
+            margin-bottom: 24px;
+        }
+        .info p{
+            margin-bottom: 10px;
+        }
+        .info i{
+            margin-right: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="content">
+                <div class="form">
+                    <form>
+                        <div class="inputs">
+                            <input type="text" name="name" placeholder="Your Name">
+                        </div>
+                        <div class="inputs">
+                            <input type="email" name="email" placeholder="Your Email">
+                        </div>
+                        <div class="inputs">
+                            <textarea name="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+                        </div>
+    
+                        <button>Send Message</button>
+                    </form>
+                </div>
+                <div class="info">
+                    <h3>Contact Information</h3>
+                    <p><i class="fas fa-phone"></i>+972 597587048</p>
+                    <p><i class="fas fa-envelope"></i>yazannazzal58@gmail.com</p>
+                </div>
+            </div>
+           
+           
+
+        </div>
+    </div>
+</body>
+</html>

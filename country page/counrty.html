@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="country.css">
+</head>
+<body>
+    <div class="content">
+        <div class="top">
+            <div class="btn">
+                <a href="home.html">
+               
+                    Back To Home Page
+                </a>
+              </div>
+           <div class="countrySelection">
+            <div class="countryLabel">
+                <label for="" id="countryLabel"></label>
+            </div>
+            <div class="countrySelect" onchange="sendCountryToAPI()">
+                <select name="" id="countSelect">
+                    <option value="" selected disabled>--Choose country --</option>
+                    <option name="Palestine"id="PS">Palestine</option>
+                    <option name="Saudi Arabia"id="SA">Saudi Arabia</option>
+                    <option  name="EGYPT" id="EG">EGYPT</option>
+                    <option name="America"id="US"> America</option>
+                </select>
+            </div>
+           </div>
+           <div class="citySelection">
+            <div class="cityLabel">
+                <label for=""></label>
+            </div>
+
+           <div class="citySelect">
+            <select name="" id="citySelect" onchange="sendCityToAPI()">
+                <option value="" selected disabled>--Choose City --</option>
+            </select>
+           </div>
+            
+           
+           </div>
+
+        </div>
+        <div class="bottom">
+        <div class="cards">
+            <div class="card">
+                <div class="header">
+                    <h1>الفجر</h1>
+                  </div>
+                  <div class="body">
+                    <div class="time" id="fajr" >
+                        <p ></p>
+                    </div>
+                  </div>
+            </div>
+            <div class="card">
+                <div class="header">
+                    <h1>الظهر</h1>
+                  </div>
+                  <div class="body">
+                    <div class="time" id="duhr">
+                        <p></p>
+                    </div>
+                  </div>
+            </div>
+            <div class="card">
+                <div class="header">
+                    <h1>العصر</h1>
+                  </div>
+                  <div class="body">
+                    <div class="time" id="asr">
+                        <p></p>
+                    </div>
+                  </div>
+            </div>
+            <div class="card">
+                <div class="header">
+                    <h1>المغرب</h1>
+                  </div>
+                  <div class="body">
+                    <div class="time" id="mughr">
+                        <p></p>
+                    </div>
+                  </div>
+            </div>
+            <div class="card">
+                <div class="header">
+                    <h1>العشاء</h1>
+                  </div>
+                  <div class="body">
+                    <div class="time" id="isha">
+                        <p></p>
+                    </div>
+                  </div>
+            </div>
+            
+        </div>
+     
+    </div>
+    </div>
+    
+    <script src="/node_modules/axios/dist/axios.js"></script>
+    <script src="country.js"></script>
+</body>
+</html>
